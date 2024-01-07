@@ -62,12 +62,13 @@ long long maxPair (int arr[], int n)
     // The second largest number will be found here
     for (int i = 0; i < n; i++)
     {
-        // This statement will increment i be 1 when it reaches the index of the maximum number
+        // This statement will check if i and the index of the maximum number are the same and stop the loop
         if (i == indexMax && indexMax == n -1)
         {
             break;
         }
 
+        // This statement will increment i be 1 when it reaches the index of the maximum number
         else if (i == indexMax)
         {
             i++;
