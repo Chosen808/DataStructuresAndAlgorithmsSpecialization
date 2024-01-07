@@ -38,7 +38,7 @@ long long maxPair (int arr[], int n)
     int index = 0;  // This holds the index which arr[] is set at
     int max = arr[index];   // max will store the value of arr[] located at the index = 0
     int indexMax = 0;   // This will store the index of the maximum number in arr[]
-    int product = 0;    // This will store the maximum product
+    long long product = 0;    // This will store the maximum product
 
     // The maximum number is found here
     for (int i = 0; i < n; i++)
@@ -75,7 +75,7 @@ long long maxPair (int arr[], int n)
     }
 
     // The product will be calculated here
-    product = max * max2;
+    product = (long long)max * max2;
 
     return product;
 }
